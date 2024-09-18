@@ -12,7 +12,7 @@ El repositorio `tienda_tandil` contiene un sistema diseñado para gestionar el c
 
 ### El diagrama muestra las relaciones entre las dos tablas:
 
-- **Categorías**: se almacenan los distintos tipos de componentes y productos que a la venta: teclados, microprocesadores, placas de video y perifericos.
+- **Categorías**: se almacenan los distintos tipos de componentes y productos a la venta: teclados, microprocesadores, placas de video y perifericos.
 - **Productos**: se almacena cada producto unico: nombre, precio y descripción.
 
 
