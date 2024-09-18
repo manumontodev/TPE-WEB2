@@ -1,6 +1,6 @@
 # Tienda Tandil
 
-El repositorio `tienda_tandil` contiene un sistema diseñado para gestionar el catálogo de la pagina web desarrollada para el TPE de la materia Web 1: https://manumontodev.github.io/TPE-WEB1/.
+Este repositorio contiene un sistema diseñado para gestionar el catálogo de la pagina web [Tienda Tandil](https://manumontodev.github.io/TPE-WEB1/), desarrollada para el TPE de la materia Web 1.
 
 ## Integrantes: 
 - Montoya, Manuel
