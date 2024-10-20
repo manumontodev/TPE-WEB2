@@ -35,8 +35,8 @@ class CategoriaModel
 END;
             $this->db->query($sql);
 
-            $this->addCategoria('Bad Bunny', 'Descripción 1', 25, 'Puerto Rico');
-            $this->addCategoria('Arcangel', 'Descripción 2', 30, 'Puerto Rico');
+            $this->addCategoria('Mouse', 'Descripción 1', 0);
+            $this->addCategoria('procesador', 'Descripción 2', 1);
         }
     }
 
