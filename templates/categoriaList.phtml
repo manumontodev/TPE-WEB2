@@ -1,0 +1,12 @@
+<?php require("templates/header.phtml") ?>
+
+<div class='contenedor-tarjeta-categoria'>
+    <?php foreach ($categorias as $categoria): ?>
+        <div class='categoria-tarjeta'>
+            <a href="categoria/<?= $categoria->id ?>" id="categoria-btn"><?= $categoria->nombre ?></a>
+            <?php if (SesionHelper::isAdmin()) { ?>
+                <a href='removeCategoria/<?= $categoria->id ?>' id='eliminar-btn'>Eliminar</a>
+            <?php } ?>
+        </div>
+    <?php endforeach; ?>
+</div>
