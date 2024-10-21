@@ -20,7 +20,7 @@ switch ($params[0]) {
         $controller = new CategoriaController();
         $controller->showListaCategorias();
         break;
-    case "artista":
+    case "categoria":
         $controller = new CategoriaController();
         $controller->showCategoria($params[1]);
         break;
