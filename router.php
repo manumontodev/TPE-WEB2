@@ -44,15 +44,15 @@ switch ($params[0]) {
         $controller = new SesionController();
         $controller->register();
         break;
-    case "addArtista":
+    case "addCategoria":
         $controller = new CategoriaController();
         $controller->addCategoria();
         break;
-    case "removeArtista":
+    case "removeCategoria":
         $controller = new CategoriaController();
         $controller->removeCategoria($params[1]);
         break;
-    case "editArtista":
+    case "editCategoria":
         $controller = new CategoriaController();
         $controller->editCategoria($params[1]);
         break;
