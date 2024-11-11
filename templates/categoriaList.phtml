@@ -3,9 +3,9 @@
 <div class='contenedor-tarjeta-categoria'>
     <?php foreach ($categorias as $categoria): ?>
         <div class='categoria-tarjeta'>
-            <a href="categoria/<?= $categoria->id ?>" id="categoria-btn"><?= $categoria->nombre ?></a>
+            <a href="categoria/<?= $categoria->id_categoria ?>" id="categoria-btn"><?= $categoria->nombre ?></a>
             <?php if (SesionHelper::isAdmin()) { ?>
-                <a href='removeCategoria/<?= $categoria->id ?>' id='eliminar-btn'>Eliminar</a>
+                <a href='removeCategoria/<?= $categoria->id_categoria ?>' id='eliminar-btn'>Eliminar</a>
             <?php } ?>
         </div>
     <?php endforeach; ?>

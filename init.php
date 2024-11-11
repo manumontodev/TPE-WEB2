@@ -1,5 +1,5 @@
 <?php
-include_once 'config.php';
+include_once './app/models/config.php';
 include_once './app/helpers/db.helper.php';
 
 include_once './app/models/categoria.model.php';

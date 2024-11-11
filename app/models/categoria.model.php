@@ -25,7 +25,7 @@ class CategoriaModel
         if (count($tables) == 0) {
             $sql = <<<END
         CREATE TABLE `categoria` (
-            `id` int(11) NOT NULL AUTO_INCREMENT,
+            `id_categoria` int(11) NOT NULL AUTO_INCREMENT,
             `nombre` varchar(100) DEFAULT NULL,
             `descripcion` int(11) NOT NULL,
             `oferta` tinyint(1) NOT NULL,
@@ -55,7 +55,7 @@ END;
 
     function getCategoria($id)
     {
-        $query = $this->db->prepare('SELECT * from categoria WHERE id = ?');
+        $query = $this->db->prepare('SELECT * from categoria WHERE id_categoria = ?');
         $query->execute([$id]);
         $categoria = $query->fetch(PDO::FETCH_OBJ);
 
@@ -81,13 +81,13 @@ END;
 
     function removeCategoria($id)
     {
-        $query = $this->db->prepare('DELETE FROM categoria WHERE id = ?');
+        $query = $this->db->prepare('DELETE FROM categoria WHERE id_categoria = ?');
         $query->execute([$id]);
     }
 
     function editCategoria($id, $nombre, $descripcion, $oferta)
     {
-        $query = $this->db->prepare('UPDATE categoria SET nombre = ?, descripcion = ?, oferta = ? WHERE id = ?');
+        $query = $this->db->prepare('UPDATE categoria SET nombre = ?, descripcion = ?, oferta = ? WHERE id_categoria = ?');
         $realizado = $query->execute([$nombre, $descripcion, $oferta, $id]);
 
         return $realizado;

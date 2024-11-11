@@ -8,7 +8,7 @@ class CategoriaView
     function showListaCategorias($categorias)
     {
 
-        require './templates/categoriasList.phtml';
+        require './templates/categoriaList.phtml';
         if (SesionHelper::isAdmin()) {
             require './templates/categoriaAgregar.phtml';
         }

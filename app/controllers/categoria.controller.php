@@ -36,7 +36,7 @@ class CategoriaController
         SesionHelper::verify();
         $nombre = $_POST['categoria-name'];
         $desc = $_POST['categoria-desc'];
-        $oferta = $_POST['categoria-oferta'];
+        $oferta = intval($_POST['categoria-oferta']);
 
         if (empty($nombre) || empty($desc) || empty($oferta)) {
             $this->view->showError("Debes completar todos los datos");
@@ -66,7 +66,7 @@ class CategoriaController
         SesionHelper::verify();
         $nombre = $_POST['categoria-name'];
         $desc = $_POST['categoria-desc'];
-        $oferta = $_POST['categoria-oferta'];
+        $oferta = intval($_POST['categoria-oferta']);
 
         if (empty($nombre) || empty($desc) || empty($oferta)) {
             $this->view->showError("Debes completar todos los datos");
