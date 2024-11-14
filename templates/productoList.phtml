@@ -2,5 +2,11 @@
 
     <div class='categoria-nom'>
         <h3>Productos</h3>
+        <ul>
+            <?php foreach ($productos as $producto): ?>
+                <li><?= $producto->producto ?></li>
+            <?php endforeach; ?>
+        </ul>
+
     </div>
 </div>

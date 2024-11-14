@@ -61,13 +61,13 @@ END;
         return $categoria;
     }
 
-    function getProductosPorCategoria($nombreCategoria)
+    function getProductosPorCategoria($id)
     {
-        $query = $this->db->prepare('SELECT * FROM producto JOIN categoria ON producto.categoria = categoria.nombre WHERE categoria.nombre = ?');
-        $query->execute([$nombreCategoria]);
-        $canciones = $query->fetchAll(PDO::FETCH_OBJ);
+        $query = $this->db->prepare('SELECT * FROM producto JOIN categoria ON producto.id_categoria = categoria.id_categoria WHERE categoria.id_categoria = ?');
+        $query->execute([$id]);
+        $productos = $query->fetchAll(PDO::FETCH_OBJ);
 
-        return $canciones;
+        return $productos;
     }
 
     function addCategoria($nombre, $descripcion, $oferta)

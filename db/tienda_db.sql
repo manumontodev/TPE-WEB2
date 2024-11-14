@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 11-11-2024 a las 21:33:36
+-- Tiempo de generación: 14-11-2024 a las 21:17:54
 -- Versión del servidor: 10.4.28-MariaDB
 -- Versión de PHP: 8.2.4
 
@@ -53,7 +53,7 @@ INSERT INTO `categoria` (`id_categoria`, `nombre`, `descripcion`, `oferta`) VALU
 
 CREATE TABLE `producto` (
   `id_producto` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
+  `producto` varchar(100) NOT NULL,
   `precio` decimal(10,2) NOT NULL,
   `descripcion` text DEFAULT NULL,
   `id_categoria` int(10) NOT NULL
@@ -63,7 +63,7 @@ CREATE TABLE `producto` (
 -- Volcado de datos para la tabla `producto`
 --
 
-INSERT INTO `producto` (`id_producto`, `nombre`, `precio`, `descripcion`, `id_categoria`) VALUES
+INSERT INTO `producto` (`id_producto`, `producto`, `precio`, `descripcion`, `id_categoria`) VALUES
 (1, 'EPOMAKER RT100', 219999.00, 'Teclado Mecánico estilo retro con Pantalla Inteligente Personalizable, Interruptores Volátiles en Calor, BT5.0/2.4G Inalámbrico, Batería de 5000mAh.', 1),
 (2, 'TECLADO GAMER EVGA Z15 RGB COLOR CLICKY BRONZE', 103949.00, 'Este teclado Evga de alto rendimiento permite que puedas disfrutar de horas ilimitadas de juegos. Está diseñado especialmente para que puedas expresar tanto tus habilidades como tu estilo.', 1),
 (3, 'AMD Ryzen 7 5800X', 179527.50, 'Procesador de escritorio desbloqueado de 8 núcleos y 16 hilos 4.7 GHz Max Boost, desbloqueado para overclocking, 36 MB de caché, soporte DDR-3200. Para la plataforma avanzada Socket AM4, puede admitir PCIe 4.0 en placas base X570 y B550', 2),

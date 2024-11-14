@@ -25,7 +25,7 @@ class CategoriaController
     function showCategoria($id)
     {
         $categoria = $this->model->getCategoria($id);
-        $productos = $this->model->getProductosPorCategoria($categoria->nombre);
+        $productos = $this->model->getProductosPorCategoria($categoria->id_categoria);
         $this->view->showCategoria($categoria, $productos);
     }
 
